@@ -1,19 +1,15 @@
 import PropTypes from 'prop-types';
+import { Box, Text } from './Statistics.styled';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-      }}
-    >
-      <span>Good: {good}</span>
-      <span>Neutral: {neutral}</span>
-      <span>Bad: {bad}</span>
-      <span>Total: {total}</span>
-      <span>Positive feedback: {positivePercentage}%</span>
-    </div>
+    <Box>
+      <Text>Good: {good}</Text>
+      <Text>Neutral: {neutral}</Text>
+      <Text>Bad: {bad}</Text>
+      <Text>Total: {total}</Text>
+      <Text>Positive feedback: {positivePercentage}%</Text>
+    </Box>
   );
 };
 
